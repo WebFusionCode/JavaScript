@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Function</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        // this is a normal string 
+        var str = 'This is a String';
+        console.log(str);
+
+        // Getting position of the string 
+        // first occurence of a sub string 
+        var position =  str.indexOf('is');
+        console.log(position);
+
+        // Getting position of the string 
+        // first occurence of a sub string 
+        // Index always strat with 0
+         position =  str.lastIndexOf('is');
+        console.log(position);
+
+        // substring from a string 
+        // var substr = str.slice(1,6);
+        // var substr = str.substring(1,6);
+        var substr1 = str.substr(1,6); 
+        // the substr is the starting fetch point but the 2 vlaue is for limit 
+
+        console.log(substr1);
+
+        // if we want to replace a substring with a string like in first code there was written as this is a string i want to repace the string my name harsh
+        // var replaced = str.replace('string', 'Harsh');
+        // console.log(str);
+        // console.log(replaced);
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+        // this is as same a how we add strings using + here we are using concat syntax to do so 
+        var newString = str.concat('New String');
+        console.log(newString)
+
+        var strWithWhiteSpaces = '  this is a     str    with   white spaces';
+        console.log(strWithWhiteSpaces)
+        console.log(strWithWhiteSpaces.trim())
+
+        // Now to check the character of the string by using the numbers like slice or substr 
+
+        // var char3 = str.charAt(2)
+
+        // this charcodeat gives you the charcter code 
+        var char3 = str.charCodeAt(2)
+        console.log(char3)
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+            <li>item6</li>
+            <li>item7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = 'This is a String';
+        var string1 = 'This is a String2';
+        console.log(string1)
+        // scope of this is block level we can use same variale in the block {} from now we are going to use let only for global or function or normall
+        // We are using let insteat of var for we know that in future coming we need to change the variable or add new variable so because of that we are let 
+        // let a = 'u';
+        // {
+        //     let a = 'u6';
+        //     console.log(a)
+            
+        // }
+        // console.log(a)
+
+
+        // Now we are going to see cons that is constant and constant means that thing cant be changed
+
+        const a = 'This cannot be changed';
+        // a = 'I want to change this '
+        // so here this a changed will not happen due to we have select the constant const var for write our string 
+        console.log(a)
+
+
+        // Here we are going to understand the if else statement 
+        let age = 14;
+        if(age > 18){
+            console.log('You are an adult')
+        }
+        else if(age==2){
+            console.log('You are a baby')
+        }
+        else if(age==14){
+            console.log('You are an Teenager')
+        }
+        else{
+            console.log('You are not an adult')
+        }
+
+
+        // Switch case statements
+
+        const cups = 10  ;
+        switch (cups) {
+            case 4:
+                console.log('The value of cups is 4')
+                break;
+
+            case 10:
+                console.log('The value of cups is 10')
+                break;
+
+            case 8:
+                console.log('The value of cups is 8')
+                break;
+
+            case 30:
+                console.log('The value of cups is 30')
+                break;
+
+            case 33:
+                console.log('The value of cups is 33')
+                break;
+        
+            default:
+                console.log('The value of cups is none of them')
+                break; 
+        }
+
+        // if we remove all the breaks then it will run akl the cases by default 
+
+
+    </script>
+</body>
+</html>
