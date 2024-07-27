@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manupulatin DOM</title>
+    <title>Manipulating DOM</title>
 </head>
 <body>
-    <div class="container">
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Projects</li>
+            <li>Services</li>
+        </ul>
         <p>This is a DOM </p>
     </div>
+    <div class="container">
+        <p class="container">
+            hello this is DOM
+        </p>
+    </div>
+    <script>
+        // This is a id  in java script and for DOM 
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        
+        
+        // This is a class in java script and for DOM 
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+        
+        // This is a CSS selectors in java script and for DOM 
+        // let sel = document.querySelector('.container');
+        // console.log("Selectors Returns", sel);
+        let sel = document.querySelectorAll('#nav>li');
+        console.log("Selectors Returns", sel);
+    </script>
 </body>
 </html>
