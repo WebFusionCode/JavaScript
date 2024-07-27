@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm, prompt</title>
+</head>
+<body>
+    <div class="container">
+        <p>this is a container </p>
+    </div>
+    <script>
+        // Alert in in-browser javascript
+        // This is also called modal that when we open any webpage this alert message popups from the up side and until n unless we dont click it ok the page will not open --- and its does not return anything you cant do anything you have to click on ok to go ahead ..
+        // alert('This is a alert message');
+
+        // we can also write this in var like 
+        // let a = alert('this is a alert message');
+        // console.log(a);
+
+        //  How to give a prompt to your user like you have gaming webpage and you are asking for its name them how will you give it 
+        // And this promp is also the combination of alret type modal the thing is it will ask you name to load the page after filling this 
+        // The first is your message what yout have to give or ask to your user and the second value is for DEFAULT value it will show already as a guest and enter to you 
+
+        // let name = prompt('What is your Name ?','Guest');
+        // console.log(name);
+
+        // Now we going to use CONFIRM the use of confirm is when are deleting some files or anything then for the last tiime it ask do you want to really delete the file and we click on confirm 
+
+        // let files = confirm('Do really want to delete this files ?');
+        // console.log(files);
+        // if(files){
+            // code to delete the post 
+            // console.log('files deleted');
+
+        // }
+            // else{
+                // code to cancle de;etion of the files 
+                // console.log('files not deleted');
+            // }
+
+
+            // I will expalin this 
+            // 1) Make a Variable Prompt name ages 
+            // 2) Then make a function give a name to the function and define what you are going to enter there to run the function
+            // 3) then apply the if elese statement the if defined element is not eligible the print this else print this 
+            // 4) them make the defined function variable let define name then call the function variable and in bracket call the prompt variable 
+            // 5) at last console.log(call let variable defined)
+
+            // let ages= prompt('Are you 18+ ?', '');
+
+            // function age1 (age){
+            //     if(age > 18){
+            //         console.log('You are eligible for the sports !');
+            //     }
+            //     else{
+            //         console.log('You are not eligible for the sports !');
+            //     }
+            // }
+            // let age = age1(ages);
+            // console.log(age);
+
+            let user = prompt('Are you a new user ?', '');
+
+            function users(newuser){
+                if(newuser === 'yes'){
+                console.log('Welcome to the webpage');
+                }
+                
+            else{
+                console.log('Welcome back to the webpage');
+            }
+        }
+
+            let newuser = users(user);
+            console.log(newuser);
+
+
+
+    </script>
+</body>
+</html>

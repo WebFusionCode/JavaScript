@@ -27,7 +27,7 @@ function greet (name, greetText='Greetings from javascript'){
 greet(name1, greetText);
 greet(name2, greetText);
 greet(name3, greetText);
-greet(name4, greetText);
+greet(name4, greetText);    
 greet(name5,);
 
 function sum(a,b,c){
