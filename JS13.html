@@ -51,9 +51,12 @@
         setInterval(updateTime, 1000);
         
         function updateTime(){
-            time.innerHTML = new Date();
+            time.innerHTML = new Date();  
+            // This ill work like this and the dow one like this 
+            let update = document.getElementById('time').innerHTML = new Date();
+            console.log(update)
         }
-            
+
 
     </script>
 </body>
