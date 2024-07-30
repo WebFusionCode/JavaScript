@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        
+
+        Todays date and time is <span id="time"></span>
+    </div>
+    <script>
+        console.log('This is date and Time Tutorial')
+
+        let now = new Date()
+        console.log(now);
+
+        let dt = new Date(0)
+        console.log(dt);
+
+        // let newDate = new Date("2019-09-30");
+        // console.log(newDate);
+
+        // let newDate = new Date(year, month, date, hour, min, seconds, millsec);
+        let newDate = new Date(3020, 7, 10, 12, 56, 8, 33);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log('The year is ', yr);
+
+        let dt1 = newDate.getDate();
+        console.log('The date is ', dt1);
+
+        let mo = newDate.getMonth();
+        console.log('The year is ', mo);
+
+        let se = newDate.getSeconds();
+        console.log('The year is ', se);
+
+        // There are many more funstions to use in date and time 
+
+        // and now how to change the date and time in the setted date and time 
+        newDate.setDate(5);
+        console.log(newDate);
+
+        //     Date.now();
+        // console.log()
+
+        setInterval(updateTime, 1000);
+        
+        function updateTime(){
+            time.innerHTML = new Date();
+        }
+            
+
+    </script>
+</body>
+</html>

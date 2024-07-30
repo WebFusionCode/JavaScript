@@ -8,6 +8,8 @@
 <body>
     <div class="container">
         This is container
+
+        The actual Time is <span id="time"></span>
     </div> 
     <script>
         console.log('this is tutorial 12')
@@ -18,10 +20,20 @@
             console.log('Hello Good Morning '+ name + byetxt);
         }
         // setTimeout(greet, 5000, "Harsh ", "Take care");
-        timeOut=setTimeout(greet, 5000, "Harsh ", "Take care");
-        console.log(timeOut);
+        // timeOut=setTimeout(greet, 5000, "Harsh ", "Take care");
+        // console.log(timeOut);
 
-        clearTimeout(timeOut);
+        // clearTimeout(timeOut);
+
+        // intervalID = setInterval(greet, 1000, 'harsh ','hw are you! ');
+        // clearInterval(intervalID);
+
+        function displayTime(time){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime , 1000);
 
         // setTimeout(greet(), 2000); this will timw but directly not gaining time beacuse we do not have to write in the parenthisis form 
 
