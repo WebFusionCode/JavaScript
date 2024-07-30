@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow functions tutorial.
+    </div>
+    <script>
+        // function greet() {
+        //     console.log('Good Morning')
+        // }
+        greet =() => console.log('Good Morning')
+        // NOTE IF THERE IS NO ARGUMENT THERE YOU HAVE TO PA=LACE THE EMPTY BRACKETS
+
+        // let sum1 = (a,b)=> {
+        //     return a + b;
+        // }
+
+        // Short cut o shortcut
+        let sum1 = (a, b) => a + b;
+        
+        let half= a => a/2;
+
+        // this is how arrow function works basically it is a short cut to write a function 
+        greet = ()=> {
+            console.log('Good Morning')
+        }
+        greet()
+        setTimeout(() => {
+            console.log('We are in set time out')
+        }, 5000);
+
+        let obj1={
+            greeting:'good morning',
+            names: ['harsh','utkarsh','rohit','siddu'],
+            speak1() {
+                this.names.forEach((student)=>{
+                    console.log('hello ',this.greeting  + ' '+  student)
+
+                });
+            }
+        }
+        
+        obj1.speak1()
+    </script>
+</body>
+</html>
