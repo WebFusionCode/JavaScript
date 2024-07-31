@@ -18,7 +18,41 @@
         let a = 34.9473;
         let b = 22;
         console.log("The value of a and b ",a,b);
+        // Round figure value 
         console.log("The value of a and b rounded is ", m.round(a), m.round(b));
+        // The power value 
+        console.log("The power 3 raised 2 is", m.pow(3, 2));
+        // the square root of math function 
+        console.log("The square root of 36 is", m.sqrt(36));
+        
+        // ceiling and floor 
+        console.log("The upper rounded value of", m.ceil(36.687));
+        console.log("The down rounded value of root ", m.floor(36.123));
+
+        // Absolute value math funstion and absolute value return always the positive value when we put negative it will transfrom into positive value
+        console.log("The absolute value of -5 is", m.abs(-5));
+        
+        // Trignometry functions 
+        console.log("The value of sin is ", m.sin(3));
+        console.log("The value of cos is ", m.cos(8));
+        console.log("The value of tan is ", m.tan(2,2));
+
+        // Minimum and maxium values function 
+        console.log("The minimum value of 2,3,4,5,6,7 is ", m.min(2,3,4,5,6,7));
+        console.log("The maximum value of 2,3,4,5,6,7 is ", m.max(2,3,4,5,6,7));
+
+        // Generating a random number 
+        let o = 1;
+        let p = 100;
+        let r1 = 0 + (p-o)*m.random( );
+        console.log("The random number is ", r1);
+
+
+        let r = m.random();
+        console.log("The random number is ", r);
+
+
+        
 
     </script>
 </body>
