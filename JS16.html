@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASON tutorial in javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JASON stands for JAVA SCRIPT OBJECT NOTATION</h1>
+        <p>The format is used to store and transport data</p>
+    </div>
+    <script>
+        let jsonobj = {
+            name:'harsh',
+            channel:'WebFusion',
+            location:'India',
+            food:'Bhindi'
+        }
+        console.log(jsonobj);
+
+        // jason is used to convert all the object strinig in one string using JSON.stringify(obname)
+        let str = JSON.stringify(jsonobj);
+        console.log(str);
+
+        jsonobj = str.replace('harsh','harry')
+        console.log(jsonobj);
+
+        // reconvert to object 
+        newjson = JSON.parse(jsonobj)
+        console.log(newjson)
+    </script>
+</body>
+</html>
