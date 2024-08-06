@@ -11,6 +11,9 @@ const app = express();
 // 3rd step set the port to call on the localhost 
 const port = 80;
 
+// for serving static file 
+app.use('/static',express.static('static'));
+
 // 4th using get method to handle my request by the slash(/) or any about end point  
 // And we can also add the status code in this by adding some word 
 app.get('/',(req,res)=>{
