@@ -1,0 +1,1 @@
+Express can o the work of custom backend module that we dont have write that big code by our small brains the express library makes oour work easy and fast it do out work of routing get and post for our web page and it is scalable 
