@@ -5,6 +5,9 @@
 // 1st Step Import Express module
 const express = require('express');
 
+// Giving a string path of view directory
+const path = require('path')
+
 // 2nd make the app or any name that you want to create and initialize it eith the express 
 const app = express();
 
@@ -14,10 +17,16 @@ const port = 80;
 // for serving static file 
 app.use('/static',express.static('static'));
 
+// set the Templet engine as pug
+app.set('view engine', 'pug')
+
+// set the view directory 
+app.get(path.join(__dirname,'views'));
+
 // 4th using get method to handle my request by the slash(/) or any about end point  
 // And we can also add the status code in this by adding some word 
-app.get('/',(req,res)=>{
-    res.status(200).send('Hello World');
+app.get('/demo',(req,res)=>{
+    res.status(200).render('demo', { title: 'Hey Harsh', message: 'Hello there! is an update on the Node js' });
     // res.send('Hello World');
 
 })
