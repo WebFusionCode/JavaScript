@@ -2,49 +2,53 @@
 
 
 
-// 1st Step Import Express module
-const express = require('express');
 
-// Giving a string path of view directory
-const path = require('path')
+const express = require('express'); // 1st Step Import Express module
+const path = require('path'); // Giving a string path of view directory
+const app = express();  // 2nd make the app or any name that you want to create and initialize it eith the express 
+const port = 80; // 3rd step set the port to call on the localhost 
 
-// 2nd make the app or any name that you want to create and initialize it eith the express 
-const app = express();
+// EXPRESS SPECIFIC STUFF HERE 
+app.use('/static',express.static('static')); // for serving static file 
 
-// 3rd step set the port to call on the localhost 
-const port = 80;
+// PUG SPECIFIC STUFF HERE 
+app.set('view engine', 'pug') // set the Templet engine as pug
+app.get(path.join(__dirname,'views'));// set the view directory 
 
-// for serving static file 
-app.use('/static',express.static('static'));
-
-// set the Templet engine as pug
-app.set('view engine', 'pug')
-
-// set the view directory 
-app.get(path.join(__dirname,'views'));
-
-// 4th using get method to handle my request by the slash(/) or any about end point  
-// And we can also add the status code in this by adding some word 
-app.get('/demo',(req,res)=>{
-    res.status(200).render('demo', { title: 'Hey Harsh', message: 'Hello there! is an update on the Node js' });
-    // res.send('Hello World');
-
+// END POINTS 
+app.get('/',(req,res)=>{
+    const con = 'All over the best game is bgmi'
+    const param = {'title': 'the best game', 'content': con}
+    res.status(200).render("index.pug", param)
 })
 
-app.get('/about',(req,res)=>{
-    res.send('About Hello World ');
-})
 
-app.get('/this',(req,res)=>{
-    res.status(404).send('This Page is not Found');
-})
-
-// This is for the post 
-app.post('/about',(req,res)=>{
-    res.send('About Hello World ');
-})
-
-// 5th app.listen then apply port like whenever rq comes it reponse  
+// START THE SERVER 
 app.listen(port, ()=>{
+   
     console.log(`The application staarted successfully on port ${port}`);
 })
+
+// 4th using get method to handle my request by the slash(/) or any about end point  
+// And we can also add the status code in this by adding some word
+
+// app.get('/demo',(req,res)=>{
+//     res.status(200).render('demo', { title: 'Hey Harsh', message: 'Hello there! is an update on the Node js' });
+//     // res.send('Hello World');
+
+// })
+
+// app.get('/about',(req,res)=>{
+//     res.send('About Hello World ');
+// })
+
+// app.get('/this',(req,res)=>{
+//     res.status(404).send('This Page is not Found');
+// })
+
+// // This is for the post 
+// app.post('/about',(req,res)=>{
+//     res.send('About Hello World ');
+// })
+
+// 5th app.listen then apply port like whenever rq comes it reponse  
