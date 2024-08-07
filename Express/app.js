@@ -17,8 +17,8 @@ app.get(path.join(__dirname,'views'));// set the view directory
 
 // END POINTS 
 app.get('/',(req,res)=>{
-    const con = 'All over the best game is bgmi'
-    const param = {'title': 'the best game', 'content': con}
+    const con = 'All over the best membership in the city'
+    const param = {'title': 'the best membership', 'content': con}
     res.status(200).render("index.pug", param)
 })
 
