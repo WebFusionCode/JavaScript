@@ -32,6 +32,7 @@ nav{
     border: 2px solid green;
     border-radius: 10px;
     top: 20px;
+    padding-top: 20px;
     margin: 12px auto;
     background-color: yellow;
     max-width: 60%;
@@ -66,4 +67,16 @@ p{
     outline: none;
     border: 2px solid black;
     border-radius: 10px; 
+}
+.btn{
+    display: inline-block;
+    position: absolute;
+    height: 30px;
+    width: 60%;
+    margin: 2px auto;
+    justify-content: center;
+    align-items: center;
+    left: 165px;
+    border-radius: 10px;
+    cursor: pointer;
 }
