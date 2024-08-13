@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style
+        style 
+            include ../static/style.css
+
+block content 
+    section#pannel1
+        div Welcome to Fusion Dance Academy 
+        div We are a dance studio that offers classes in various styles of dance.
+    
+
+    section#pannel2
+        h3 Our Mission
+        div.card 
+            h4 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/Images/download1.jpeg")
+                div.card-content 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit explicabo cupiditate blanditiis ratione et.
+        div.card 
+            h4 Dance the way you like!
+            div.card-box 
+                div.card-img 
+                    img(src="/static/Images/download2.jpeg")
+                div.card-content 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit explicabo cupiditate blanditiis ratione et.
+        div.card 
+            h4 Expert Teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/Images/download3.jpeg")
+                div.card-content 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit explicabo cupiditate blanditiis ratione et.
+
+    section#pannel3
+        h3 Our Sponsers
+        div#spons-box
+              div.spons-card 
+                    img(src="/static/Images/download 4.png")
+              div.spons-card 
+                    img(src="/static/Images/download5.jpeg")
+              div.spons-card 
+                    img(src="/static/Images/download6.jpeg")
+

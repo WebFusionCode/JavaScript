@@ -16,7 +16,11 @@ app.set(path.join(__dirname, 'views')) // Setting the path of the folder where t
 // Here are the end points of the get and post 
 app.get('/',(req,res)=>{
     const params = {}
-    res.status(200).render('index.pug', params)
+    res.status(200).render('home.pug', params)
+})
+app.get('/contact',(req,res)=>{
+    const params = {}
+    res.status(200).render('contact.pug', params)
 })
 
 
