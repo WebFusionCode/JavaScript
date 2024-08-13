@@ -1,4 +1,3 @@
-//- index.pug
 doctype html
 html
   head
@@ -7,6 +6,9 @@ html
   body
     nav#navbar.top
         ul
+            div#logo 
+                img(src="/static/Images/download.png")
+                |
             li #[a(href="/") Home]
             li #[a(href="/") About]
             li #[a(href="/") Contact us]
@@ -20,10 +22,43 @@ html
     
 
     section#pannel2
-        h3 Our Sponsers
+        h3 Our Mission
+        div.card 
+            h4 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/Images/download1.jpeg")
+                div.card-content 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit explicabo cupiditate blanditiis ratione et.
+        div.card 
+            h4 Dance the way you like!
+            div.card-box 
+                div.card-img 
+                    img(src="/static/Images/download2.jpeg")
+                div.card-content 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit explicabo cupiditate blanditiis ratione et.
+        div.card 
+            h4 Expert Teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/Images/download3.jpeg")
+                div.card-content 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit explicabo cupiditate blanditiis ratione et.
 
+    section#pannel3
+        h3 Our Sponsers
+        div#spons-box
+              div.spons-card 
+                    img(src="/static/Images/download 4.png")
+              div.spons-card 
+                    img(src="/static/Images/download5.jpeg")
+              div.spons-card 
+                    img(src="/static/Images/download6.jpeg")
     footer#footer1
         | Footer Section
+        h4 Follow us on Instagram, Facebook, Twitter
+        h4 Subscribe on youtube channel DDD 
+        h4 Click here for more info 
 
     script
       include ../static/index.js

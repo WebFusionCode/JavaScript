@@ -6,6 +6,18 @@
 #navbar{
     background-color: rgba(0, 0, 0, 0.788);
     padding: 20px;
+    height: 80px;
+
+}
+#logo{
+    display: flex;
+    position: relative;
+    right: 200px;
+    bottom: 5px;
+}
+#logo img{
+    height: 50px;
+    border-radius: 50%;
 }
 #navbar li{
     list-style: none;
@@ -16,6 +28,8 @@
     justify-content: center;
 }
 #navbar ul li a{
+    position: relative;
+    top: 10px;
     text-decoration: none;
     padding: 10px 20px;
     margin: 9px;
@@ -67,8 +81,74 @@
     font-size: 35px;
     font-family: monospace;
 }
+.card{
+    display: inline-block;
+    /* border: 1px solid rgb(0, 0, 0); */
+    border-radius: 10px;
+    width: 30%;
+    height: 210px;
+    margin: 20px;
+    /* background-color: rgba(127, 255, 212, 0.171); */
+}
+.card h4{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-bottom: 8px;
+
+
+}
+.card-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.card-box p{ 
+    position: relative;
+    left: 20px;
+   width: 300px;
+   color: aliceblue;
+   text-align: center;
+}
+
+#pannel3{
+    
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.466);
+}
+#pannel3 h3{
+    padding-top: 17px;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: monospace;
+}
+#spons-box{
+    display: flex;
+
+}
+.spons-card{
+    margin: 10px auto;
+}
 
 #footer1{
     height: 100px;
     background-color: black;
+    position: relative;
+    align-items: center;
+    
+}
+#footer1 h4{
+display: inline-block;
+        /* background-color: rgb(255, 255, 255); */
+        color: white;
+        text-decoration: underline;
+        margin: 12px;
+        position: relative;
+    text-align: center;
+        padding: 10px;
 }
